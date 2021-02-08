@@ -43,7 +43,7 @@ function writeStock(x){
   }else{
     x=x-1;
   } 
-  database.ref('https://console.firebase.google.com/u/0/project/virtual-pet-62e89/database/virtual-pet-62e89-default-rtdb/data').update({
-    Food:x
+  database.ref().update({
+    food:x
   })
 }
